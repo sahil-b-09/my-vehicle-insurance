@@ -29,7 +29,7 @@ const ServiceDetail: React.FC = () => {
                 <meta name="keywords" content={service.keywords} />
             </Helmet>
 
-            <div className="pt-24 pb-20 bg-gray-50 min-h-screen">
+            <div className="pt-24 pb-20 bg-slate-50 min-h-screen">
                 {/* Hero Section */}
                 <div className="relative h-[400px] w-full overflow-hidden mb-12">
                     <div className="absolute inset-0 bg-gradient-to-r from-slate-900 via-slate-900/80 to-transparent z-10"></div>
