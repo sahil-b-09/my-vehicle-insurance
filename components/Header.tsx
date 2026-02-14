@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Menu, X, MessageCircle } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
+import WhatsAppIcon from './WhatsAppIcon';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 const Header: React.FC = () => {
@@ -77,7 +78,7 @@ const Header: React.FC = () => {
               className="bg-[#25D366] text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-[#20bd5a] transition-all duration-300 shadow-sm hover:shadow-md"
               aria-label="Chat on WhatsApp"
             >
-              <MessageCircle size={20} fill="white" />
+              <WhatsAppIcon size={20} fill="white" />
             </a>
           </div>
         </nav>

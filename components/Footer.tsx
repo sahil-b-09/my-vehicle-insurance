@@ -1,5 +1,6 @@
 import React from 'react';
-import { Phone, MessageCircle, MapPin, Mail } from 'lucide-react';
+import { Phone, MapPin, Mail } from 'lucide-react';
+import WhatsAppIcon from './WhatsAppIcon';
 
 const Footer: React.FC = () => {
   return (
@@ -46,8 +47,8 @@ const Footer: React.FC = () => {
                 <span>+91 8856979618</span>
               </a>
               <a href="https://wa.me/918856979618" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-slate-300 hover:text-white transition-colors group">
-                <div className="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center group-hover:bg-green-600 transition-colors">
-                  <MessageCircle size={16} />
+                <div className="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center group-hover:bg-[#25D366] transition-colors">
+                  <WhatsAppIcon size={16} fill="white" />
                 </div>
                 <span>WhatsApp Us</span>
               </a>

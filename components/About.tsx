@@ -20,9 +20,9 @@ const About: React.FC = () => {
               <div className="w-48 h-48 md:w-56 md:h-56 rounded-full border-4 border-mv-gold shadow-xl overflow-hidden relative z-10 mx-auto bg-white">
                 {/* Vidya's Photo - AI Generated Professional Portrait */}
                 <img
-                  src="/assets/vidya_real.png"
+                  src="/assets/vidya.png?v=4"
                   alt="Vidya Bagul - Insurance Expert"
-                  className="w-full h-full object-cover object-[center_top]"
+                  className="w-full h-full object-cover object-[center_top] scale-[1.6] origin-[40%_15%] brightness-[1.1] contrast-[1.1]"
                 />
               </div>
               {/* Name Plate */}

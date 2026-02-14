@@ -1,5 +1,6 @@
 import React from 'react';
-import { Phone, MessageCircle } from 'lucide-react';
+import { Phone } from 'lucide-react';
+import WhatsAppIcon from './WhatsAppIcon';
 
 const StickyMobileBar: React.FC = () => {
   return (
@@ -18,7 +19,7 @@ const StickyMobileBar: React.FC = () => {
           rel="noopener noreferrer"
           className="bg-green-600 text-white flex flex-col items-center justify-center py-3 active:bg-green-700 transition-colors"
         >
-          <MessageCircle size={20} className="mb-1" />
+          <WhatsAppIcon size={20} className="mb-1" fill="currentColor" />
           <span className="text-xs font-bold font-heading">WhatsApp</span>
         </a>
       </div>

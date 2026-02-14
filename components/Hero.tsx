@@ -1,7 +1,8 @@
 
 import React from 'react';
-import { ShieldCheck, Star, MessageCircle, Phone } from 'lucide-react';
+import { ShieldCheck, Star, Phone } from 'lucide-react';
 import { motion } from 'framer-motion';
+import WhatsAppIcon from './WhatsAppIcon';
 
 const Hero: React.FC = () => {
   return (
@@ -55,7 +56,7 @@ const Hero: React.FC = () => {
                 rel="noopener noreferrer"
                 className="bg-green-600 text-white px-8 py-4 rounded-xl font-heading font-bold text-lg hover:bg-green-700 transition-all duration-300 shadow-lg shadow-green-600/25 flex items-center justify-center gap-2 group"
               >
-                <MessageCircle className="group-hover:scale-110 transition-transform" />
+                <WhatsAppIcon className="group-hover:scale-110 transition-transform" fill="white" />
                 Get Quote on WhatsApp
               </a>
               <a

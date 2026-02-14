@@ -2,9 +2,10 @@
 import React, { useState } from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import { ArrowLeft, Phone, BadgeCheck, ChevronRight, MessageSquare, CheckCircle, Shield } from 'lucide-react';
+import { ArrowLeft, Phone, ChevronRight, CheckCircle, Shield } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
 import { motion } from 'framer-motion';
+import WhatsAppIcon from '../components/WhatsAppIcon';
 
 import { servicesData } from '../data/serviceData';
 
@@ -93,8 +94,8 @@ const ServiceDetail: React.FC = () => {
                                 <div className="relative z-10">
                                     <h3 className="text-2xl md:text-3xl font-heading font-bold text-white mb-4">Still have questions?</h3>
                                     <p className="text-blue-200 mb-8 max-w-lg mx-auto">Our experts are just a message away. Get personalized advice on the best plan for your vehicle.</p>
-                                    <a href="https://wa.me/918856979618" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-8 py-3.5 rounded-full font-bold transition-all transform hover:scale-105 shadow-lg shadow-green-900/20">
-                                        <MessageSquare size={20} /> Chat on WhatsApp
+                                    <a href="https://wa.me/918856979618" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#128C7E] text-white px-8 py-3.5 rounded-full font-bold transition-all transform hover:scale-105 shadow-lg shadow-green-900/20">
+                                        <WhatsAppIcon size={20} fill="white" /> Chat on WhatsApp
                                     </a>
                                 </div>
                                 {/* Decorative bg elements */}
@@ -117,9 +118,9 @@ const ServiceDetail: React.FC = () => {
                                         href="https://wa.me/918856979618?text=Hi, I need a quote for my vehicle."
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3.5 rounded-lg transition-colors shadow-lg shadow-green-600/20 flex items-center justify-center gap-2"
+                                        className="w-full bg-[#25D366] hover:bg-[#128C7E] text-white font-bold py-3.5 rounded-lg transition-colors shadow-lg shadow-green-600/20 flex items-center justify-center gap-2"
                                     >
-                                        <MessageSquare size={20} /> Chat on WhatsApp
+                                        <WhatsAppIcon size={20} fill="white" /> Chat on WhatsApp
                                     </a>
 
                                     <a
