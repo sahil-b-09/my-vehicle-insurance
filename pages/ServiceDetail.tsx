@@ -105,25 +105,33 @@ const ServiceDetail: React.FC = () => {
 
                         {/* Sidebar */}
                         <div className="lg:col-span-4 space-y-8">
-                            {/* Get Quote Card */}
+                            {/* Get Quote Card - Direct Contact */}
                             <div className="bg-white rounded-2xl p-6 shadow-xl shadow-slate-200/50 border border-gray-100 sticky top-28">
-                                <h3 className="font-heading font-bold text-xl text-mv-blue mb-2">Get Instant Quote</h3>
-                                <p className="text-slate-500 text-sm mb-6">Compare premiums from top insurers like HDFC, ICICI, and Bajaj Allianz.</p>
+                                <h3 className="font-heading font-bold text-xl text-mv-blue mb-4">Get Your Quote Instantly</h3>
+                                <p className="text-slate-500 text-sm mb-6 leading-relaxed">
+                                    Skip the forms! Send us your vehicle details on WhatsApp or Call us to get the best quote in 5 minutes.
+                                </p>
 
-                                <form className="space-y-4 mb-6" onSubmit={(e) => e.preventDefault()}>
-                                    <div>
-                                        <label className="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Vehicle Number</label>
-                                        <input type="text" placeholder="MH 12 AB 1234" className="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 font-bold text-slate-700 focus:outline-none focus:border-mv-primary transition-colors" />
-                                    </div>
-                                    <button className="w-full bg-mv-primary hover:bg-orange-600 text-white font-bold py-3.5 rounded-lg transition-colors shadow-lg shadow-orange-500/20">
-                                        View Prices
-                                    </button>
-                                </form>
-
-                                <div className="space-y-3 pt-6 border-t border-gray-100">
-                                    <a href="tel:+918856979618" className="flex items-center justify-center gap-2 text-slate-600 hover:text-mv-blue font-bold text-sm py-2 rounded-lg hover:bg-gray-50 transition-colors">
-                                        <Phone size={18} /> Or Call: +91 88569 79618
+                                <div className="space-y-4">
+                                    <a
+                                        href="https://wa.me/918856979618?text=Hi, I need a quote for my vehicle."
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3.5 rounded-lg transition-colors shadow-lg shadow-green-600/20 flex items-center justify-center gap-2"
+                                    >
+                                        <MessageSquare size={20} /> Chat on WhatsApp
                                     </a>
+
+                                    <a
+                                        href="tel:+918856979618"
+                                        className="w-full bg-white border-2 border-slate-100 hover:border-mv-primary/50 text-mv-navy font-bold py-3.5 rounded-lg transition-colors flex items-center justify-center gap-2"
+                                    >
+                                        <Phone size={20} /> Call Now
+                                    </a>
+                                </div>
+
+                                <div className="mt-6 pt-6 border-t border-gray-100 text-center">
+                                    <p className="text-xs text-slate-400 font-medium">Simple • Fast • Reliable</p>
                                 </div>
                             </div>
 

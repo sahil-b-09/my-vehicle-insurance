@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ArrowRight, ShieldCheck, Star } from 'lucide-react';
+import { ShieldCheck, Star, MessageCircle, Phone } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const Hero: React.FC = () => {
@@ -48,26 +48,24 @@ const Hero: React.FC = () => {
               <span className="font-semibold text-mv-navy"> zero hidden terms</span>.
             </motion.p>
 
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.6 }}
-              className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
-            >
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <a
-                href="#services"
-                className="bg-mv-primary text-white px-8 py-4 rounded-xl font-heading font-bold text-lg hover:bg-mv-navy transition-all duration-300 shadow-lg shadow-mv-primary/25 flex items-center justify-center gap-2 group"
+                href="https://wa.me/918856979618?text=Hi, I want to get a quote for my vehicle insurance."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-green-600 text-white px-8 py-4 rounded-xl font-heading font-bold text-lg hover:bg-green-700 transition-all duration-300 shadow-lg shadow-green-600/25 flex items-center justify-center gap-2 group"
               >
-                Get Insured Now
-                <ArrowRight className="group-hover:translate-x-1 transition-transform" />
+                <MessageCircle className="group-hover:scale-110 transition-transform" />
+                Get Quote on WhatsApp
               </a>
               <a
-                href="#insurance-guide"
+                href="tel:+918856979618"
                 className="bg-white text-mv-navy border border-gray-200 px-8 py-4 rounded-xl font-heading font-semibold text-lg hover:border-mv-primary/50 hover:bg-gray-50 transition-all duration-300 flex items-center justify-center gap-2"
               >
-                Check Plans
+                <Phone size={20} />
+                Call Expert
               </a>
-            </motion.div>
+            </div>
 
             <motion.div
               initial={{ opacity: 0 }}

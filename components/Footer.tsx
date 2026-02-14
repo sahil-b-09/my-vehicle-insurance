@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, MessageCircle, MapPin } from 'lucide-react';
+import { Phone, MessageCircle, MapPin, Mail } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -50,6 +50,12 @@ const Footer: React.FC = () => {
                   <MessageCircle size={16} />
                 </div>
                 <span>WhatsApp Us</span>
+              </a>
+              <a href="mailto:vidyabagul09@gmail.com" className="flex items-center gap-3 text-slate-300 hover:text-white transition-colors group">
+                <div className="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center group-hover:bg-mv-primary transition-colors">
+                  <Mail size={16} />
+                </div>
+                <span>vidyabagul09@gmail.com</span>
               </a>
               <div className="flex items-center gap-3 text-slate-300">
                 <div className="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center">

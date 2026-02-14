@@ -20,9 +20,9 @@ const About: React.FC = () => {
               <div className="w-48 h-48 md:w-56 md:h-56 rounded-full border-4 border-mv-gold shadow-xl overflow-hidden relative z-10 mx-auto bg-white">
                 {/* Vidya's Photo - AI Generated Professional Portrait */}
                 <img
-                  src="/assets/vidya.png"
+                  src="/assets/vidya_real.png"
                   alt="Vidya Bagul - Insurance Expert"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-[center_top]"
                 />
               </div>
               {/* Name Plate */}
@@ -53,6 +53,16 @@ const About: React.FC = () => {
                 </div>
 
                 <div className="bg-white/5 p-4 rounded-xl border border-white/10 flex items-center gap-3">
+                  <div className="bg-mv-gold/20 p-2 rounded-full text-mv-gold">
+                    <Mail size={18} />
+                  </div>
+                  <div>
+                    <p className="text-xs text-slate-400 uppercase tracking-wider">Email</p>
+                    <a href="mailto:vidyabagul09@gmail.com" className="font-heading font-bold text-lg hover:text-mv-gold transition-colors">vidyabagul09@gmail.com</a>
+                  </div>
+                </div>
+
+                <div className="bg-white/5 p-4 rounded-xl border border-white/10 flex items-center gap-3 md:col-span-2">
                   <div className="bg-mv-gold/20 p-2 rounded-full text-mv-gold">
                     <MapPin size={18} />
                   </div>
